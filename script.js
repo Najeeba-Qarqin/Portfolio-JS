@@ -185,3 +185,83 @@ skillsContainer.innerHTML = `
     <p class='para'>Clean Code</p>
     </div>
 `;
+
+const projectsContainer = document.getElementById('projects-container');
+const popup = document.getElementById('project-popup');
+const popupContent = document.getElementById('popup-content');
+const popupBtn = document.getElementById('close-popup');
+
+const projects = [
+  {
+    title: 'Tribute Page',
+    shortDescription: 'Tribute Page project about Mark Zuker Berg one of certification projects in freeCodeCamp Responsive Web ...',
+    longDescription: 'Tribute Page project about Mark Zuker Berg one of certification projects in freeCodeCamp Responsive Web Design program build in HTML and designed in CSS.',
+    image: './images/TributePage.png',
+    technology: ['HTML', 'CSS', 'Git', 'GitHub'],
+    liveLink: 'https://najeeba-qarqin.github.io/TributePage',
+    sourceLink: 'https://github.com/Najeeba-Qarqin/TributePage',
+  },
+  {
+    title: 'Product Landing Page',
+    shortDescription: 'Product Landing Page project about a coffee shop one of certification projects in freeCodeCamp ...',
+    longDescription: 'Product Landing Page project about a coffee shop one of certification projects in freeCodeCamp Responsive Web Design program build in HTML and designed in CSS.',
+    image: './images/ProductLandingPage.png',
+    technology: ['HTML', 'CSS', 'Git', 'GitHub'],
+    liveLink: 'https://najeeba-qarqin.github.io/ProductLandingPage',
+    sourceLink: 'https://github.com/Najeeba-Qarqin/ProductLandingPage',
+  },
+  {
+    title: 'Portfolio',
+    shortDescription: 'Portfolio project a simple personal portfolio website one of certification projects in freeCodeCamp...',
+    longDescription: 'Portfolio project a simple personal portfolio website one of certification projects in freeCodeCamp Responsive Web Design program build in HTML and designed in CSS.',
+    image: './images/Portfolio.png',
+    technology: ['HTML', 'CSS', 'Git', 'GitHub'],
+    liveLink: 'https://najeeba-qarqin.github.io/Prtfolio',
+    sourceLink: 'https://github.com/Najeeba-Qarqin/Portfolio',
+  },
+  {
+    title: 'Palindrome Checker',
+    shortDescription: 'Palindrome Checker project an app can check for palindrome one of certification projects in freeCode ...',
+    longDescription: 'Palindrome Checker project a webpage can check for palindrome one of certification projects in freeCodeCamp Jvacript Algorithms And Data Structure program build in HTML, CSS and JavaScript.',
+    image: './images/PalindromeChecker.png',
+    technology: ['HTML', 'CSS', 'JavaScript', 'Git', 'GitHub'],
+    liveLink: 'https://najeeba-qarqin.github.io/palindromeChecker',
+    sourceLink: 'https://github.com/Najeeba-Qarqin/palindromeChecker',
+  },
+  {
+    title: 'Numeral Converter',
+    shortDescription: 'Roman Numeral Converter project an simple app can convert number to roman numeral one of certification ...',
+    longDescription: 'Roman Numeral Converter project an simple app can convert number to roman numeral one of certification projects in freeCodeCamp JavaScript Algorithms And Data Structure program build in HTML, CSS ans JavaScript.',
+    image: './images/RomanNumeralConverter.png',
+    technology: ['HTML', 'CSS', 'JavaScript', 'Git', 'GitHub'],
+    liveLink: 'https://najeeba-qarqin.github.io/romanNumeralConverter',
+    sourceLink: 'https://github.com/Najeeba-Qarqin/romanNumeralConverter',
+  },
+  {
+    title: 'Phone Number Validator',
+    shortDescription: 'Telephone Number Validator project an simple app can check the for valid phone numbers one of certification ...',
+    longDescription: 'Telephone Number Validator project an simple app can check the for valid phone numbers one of certification projects in freeCodeCamp JavaScript Algorithms And Data Structure program build in HTML, CSS and JavaScript.',
+    image: './images/TelephoneNumberValidator.png',
+    technology: ['HTML', 'CSS', 'JavaScript', 'Git', 'GitHub'],
+    liveLink: 'https://najeeba-qarqin.github.io/Telephone-number-validator-',
+    sourceLink: 'https://github.com/Najeeba-Qarqin/Telephone-number-validator-',
+  },
+  {
+    title: 'Cash Register App',
+    shortDescription: 'Cash Register App project an simple app can check and calculate the cash from customer one of certification ...',
+    longDescription: 'Cash Register App project an simple app can check and calculate the cash from customer, one of certification projects in freeCodeCamp Algorithms And Data Structure program build in HTML, CSS and JavaScript.',
+    image: './images/CashRegister.png',
+    technology: ['HTML', 'CSS', 'JavaScript', 'Git', 'GitHub'],
+    liveLink: 'https://najeeba-qarqin.github.io/CashRegister',
+    sourceLink: 'https://github.com/Najeeba-Qarqin/CashRegister',
+  },
+  {
+    title: 'Pokemon Search App',
+    shortDescription: 'Pokemon Search App project a simple app can show data and information about any pokemon from their ID ...',
+    longDescription: 'Pokemon Search App project a simple app can show data and information about any pokemon from their ID or name, one of certification projects in freeCodeCamp Algorithms And Data Structure program build in HTML, CSS and JavaScript.',
+    image: './images/PokemonSearch.png',
+    technology: ['HTML', 'CSS', 'Git', 'GitHub'],
+    liveLink: 'https://najeeba-qarqin.github.io/Prtfolio',
+    sourceLink: 'https://github.com/Najeeba-Qarqin/Portfolio',
+  },
+];
