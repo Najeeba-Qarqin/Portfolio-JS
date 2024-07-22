@@ -265,3 +265,36 @@ const projects = [
     sourceLink: 'https://github.com/Najeeba-Qarqin/Portfolio',
   },
 ];
+
+projectsContainer.innerHTML = projects.map(
+  (projects, index) => `
+  <div class='project-cart flex cards'>
+    <h3 class='span'>${projects.title}</h3>
+    <img class="projects-images" src='${projects.image}' />
+    <p class='para'>${projects.shortDescription}</p>
+    <button class='project-popup-btn span' onclick='showPopup(${index})'>See More<span class='white'> <img width='10px' src='./images/submit.png'/></span></button>
+  </div>
+  `
+).join('');
+
+function showPopup(index) {
+  const project = projects[index];
+  popupContent.innerHTML = `
+  <h3 class='span'>${project.title}</h3>
+  <div class='project-popup flex'>
+    <img class="projects-images" id='popup-image' src='${project.image}' alt='project-img' />
+    <p class='para'>${project.longDescription}</p>
+    </div>
+    <h2 class='para'><span class='span'>Technologies</span>: ${project.technology.join(', ')}</h2>
+    <div id='popup-btns'>
+    <a class='button' href='${project.liveLink}' target='_blank'>Live Demo</a>
+    <a class='button' href='${project.sourceLink}' target='_blank'>Source</a>
+    </div>
+  `
+  popup.classList.remove('hidden');
+};
+
+popupBtn.addEventListener('click', () => {
+  popup.classList.add('hidden');
+});
+
