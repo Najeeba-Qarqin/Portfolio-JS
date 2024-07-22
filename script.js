@@ -298,3 +298,40 @@ popupBtn.addEventListener('click', () => {
   popup.classList.add('hidden');
 });
 
+
+const form = document.getElementById('myform');
+const name = document.getElementById('name');
+const email = document.getElementById('email');
+const message = document.getElementById('message');
+const name_error = document.getElementById('name_error');
+const email_error = document.getElementById('email_error');
+const message_error = document.getElementById('message-error');
+form.addEventListener('submit', (e) => {
+  var email_checker = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.com$/;
+  if (name.value === '' || name.value === null) {
+    e.preventDefault();
+    name_error.innerHTML = 'Name is required!';
+  } else {
+    name_error.innerHTML = '';
+  }
+  if (!email.value.match(email_checker)) {
+    e.preventDefault();
+    email_error.innerText = 'Please enter a valid email address!'
+  } else {
+    email_error.innerText = '';
+  }
+  if (message.value.length <= 25) {
+    e.preventDefault();
+    message_error.innerHTML = 'Please write a message!';
+  } else {
+    message_error.innerHTML = '';
+  }
+});
+const formFields = ['name', 'email', 'message'];
+formFields.forEach((field) => {
+  const input = document.getElementById(field);
+  input.value = localStorage.getItem(field) || '';
+  input.addEventListener('input', () => {
+    localStorage.setItem(field, input.value)
+  });
+});
