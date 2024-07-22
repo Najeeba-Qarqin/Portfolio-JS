@@ -1,1 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Fleur+De+Leah&family=Gidugu&family=Puppies+Play&family=Rubik+Microbe&display=swap');
+
+* {
+  box-sizing: border-box;
+  transition: 0.7s ease;
+  font-family: sans-serif;
+  color: white;
+}
+
+html {
+  box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.5);
+  background-color: #29303B;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #29303B;
+  padding: 0 25px;
+  height: 40px;
+  width: 100vw;
+  z-index: 100;
+}
