@@ -96,3 +96,92 @@ about.innerHTML = `
 ).join('')}
       </div>
     `;
+
+const skillsContainer = document.getElementById('skills');
+
+skillsContainer.innerHTML = `
+    <h2 class='skills-title span'>Skills</h2>
+    <h4>Technical Skills <img width='15px' src='./images/skills.png'/></h4><br>
+    <div class='skills-container row small'>
+    <div class="skill">
+      <div class="outer">
+        <div class="inner">
+          <div id="html">95%</div>
+        </div>
+      </div>
+      <svg class="svg"><circle class='html'  cx="40" cy="40" r="36" stroke-linecap="round" /></svg>
+      <p>HTML</p>
+    </div>
+        <div class="skill">
+      <div class="outer">
+        <div class="inner">
+          <div id="css">90%</div>
+        </div>
+      </div>
+      <svg class="svg"><circle class='css' cx="40" cy="40" r="36" stroke-linecap="round" /></svg>
+      <p>CSS</p>
+    </div>
+        <div class="skill">
+      <div class="outer">
+        <div class="inner">
+          <div id="js">70%</div>
+        </div>
+      </div>
+      <svg class="svg"><circle class='js'  cx="40" cy="40" r="36" stroke-linecap="round" /></svg>
+      <p>javaScript</p>
+    </div>
+    </div>
+
+
+    
+        <div class='skills-container row large'>
+    <div class="skill">
+      <div class="outer">
+        <div class="inner">
+          <div id="html">95%</div>
+        </div>
+      </div>
+      <svg class="svg"><circle class='html'  cx="75" cy="75" r="67" stroke-linecap="round" /></svg>
+      <p class='para'>HTML</p>
+    </div>
+        <div class="skill">
+      <div class="outer">
+        <div class="inner">
+          <div id="css">90%</div>
+        </div>
+      </div>
+      <svg class="svg"><circle class='css' cx="75" cy="75" r="67" stroke-linecap="round" /></svg>
+      <p class='para'>CSS</p>
+    </div>
+        <div class="skill">
+      <div class="outer">
+        <div class="inner">
+          <div id="js">70%</div>
+        </div>
+      </div>
+      <svg class="svg"><circle class='js'  cx="75" cy="75" r="67" stroke-linecap="round" /></svg>
+      <p class='para'>javaScript</p>
+      </div>
+    </div>
+    <br><br><br>
+    <h4 class='title'>Soft Skills <img width='15px' src='./images/skills.png'/></h4>
+    <div class='row'>
+    <div class='flex'>
+    <div class='soft'>
+    <img class='skills-img' src='./images/teamWork.png'/>
+    </div><br>
+    <p class='para'>Team Work</p>
+    </div>
+    <div class='flex'>
+    <div class='soft'>
+    <img class='skills-img' src='./images/codeReveiw.png'/>
+    </div><br>
+    <p class='para'>Code Reveiw</p>
+    </div>
+    <div  class='flex'>
+    <div class='soft'>
+    <img class='skills-img' src='./images/cleanCode.png'/>
+    </div><br>
+    <p class='para'>Clean Code</p>
+    </div>
+`;
