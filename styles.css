@@ -24,3 +24,41 @@ header {
   width: 100vw;
   z-index: 100;
 }
+
+.logo {
+  margin: 10px;
+  color: #51D1D9;
+  font-family: "Fleur De Leah", cursive;
+  font-weight: 100;
+}
+
+.toggle-btn {
+  transform: rotate(90deg);
+  border: none;
+  background-color: unset;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+nav li {
+  list-style: none;
+  margin: 15px 30px;
+}
+
+nav li a {
+  text-decoration-line: none;
+}
+
+.navbarLinks {
+  position: absolute;
+  width: 100vw;
+  padding: 20px;
+  left: 0;
+  background-color: #29303B;
+  box-shadow: 0 0 10px #51D1D9;
+}
+
+nav li a.active,
+nav li a:hover {
+  color: #51D1D9;
+}
