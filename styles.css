@@ -97,3 +97,24 @@ nav li a:hover {
 #home p {
   margin: 25px 10px 40px;
 }
+
+#about {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+#about p {
+  margin: 20px;
+}
+
+.certificates {
+  width: 200px;
+  height: auto;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
