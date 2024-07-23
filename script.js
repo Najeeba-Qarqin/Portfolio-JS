@@ -76,6 +76,7 @@ const skills = {
 };
 
 about.innerHTML = `
+  <h2 class="span">About Me</h2>
   <img class='images' src='images/about.jpg'>
   <p class='para' id='about-p'>I'm <b class='span'>Najeeba Qarqin</b> a Web Developement student at Kick-Start i learned responsive web design and javaScript programing language and attained the free code camp certifications of Responsive Web Design and JavaScript Algorthms And Data Structure programs.
   Actively i'm increasing my web developing skills to be a profissional web developer and apply my acquired skills and knowlage to real-world projects.</p>
