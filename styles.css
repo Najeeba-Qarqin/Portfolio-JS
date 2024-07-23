@@ -62,3 +62,38 @@ nav li a.active,
 nav li a:hover {
   color: #51D1D9;
 }
+
+.span {
+  color: #51D1D9;
+}
+
+.para {
+  font-size: 13px;
+  margin: 15px 5px;
+  line-height: 20px;
+  text-align: left;
+}
+
+.hidden {
+  display: none;
+}
+
+#home {
+  padding: 80px 20px;
+}
+
+.images {
+  margin: 5px;
+  width: 250px;
+  height: 170px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.7);
+}
+
+#home strong {
+  font-size: 18px;
+  line-height: 29px;
+}
+
+#home p {
+  margin: 25px 10px 40px;
+}
