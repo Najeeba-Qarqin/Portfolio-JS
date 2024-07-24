@@ -149,7 +149,7 @@ about.innerHTML = `
           <div id="html">95%</div>
         </div>
       </div>
-      <svg class="svg"><circle class='html'  cx="115" cy="115" r="108" stroke-linecap="round" /></svg>
+      <svg class="svg"><circle class='html'  cx="115" cy="115" r="105" stroke-linecap="round" /></svg>
       <p class='para'>HTML</p>
     </div>
         <div class="skill">
@@ -158,7 +158,7 @@ about.innerHTML = `
           <div id="css">90%</div>
         </div>
       </div>
-      <svg class="svg"><circle class='css'   cx="115" cy="115" r="108" stroke-linecap="round" /></svg>
+      <svg class="svg"><circle class='css'   cx="115" cy="115" r="105" stroke-linecap="round" /></svg>
       <p class='para'>CSS</p>
     </div>
         <div class="skill">
@@ -167,7 +167,7 @@ about.innerHTML = `
           <div id="js">70%</div>
         </div>
       </div>
-      <svg class="svg"><circle class='js'  cx="115" cy="115" r="108" stroke-linecap="round" /></svg>
+      <svg class="svg"><circle class='js'  cx="115" cy="115" r="105" stroke-linecap="round" /></svg>
       <p class='para'>javaScript</p>
       </div>
     </div>

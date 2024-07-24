@@ -261,7 +261,7 @@ circle {
   height: 25px;
   font-size: 16px;
   font-weight: 100;
-  margin-left: 90%;
+  margin: 0 0 0 90%;
 }
 
 .button {
@@ -396,7 +396,7 @@ textarea {
   .project-cart {
     margin: 24px;
     border-radius: 20px;
-    width: 37vw;
+    width: 40vw;
     padding: 20px;
   }
 
@@ -422,6 +422,229 @@ textarea {
 
   .contact p,
   .contact .myform {
-    width: 70%;
+    width: 80%;
+  }
+
+  .error {
+    margin-left: -130px;
+  }
+}
+
+@media (min-width: 1000px) {
+  nav>.hidden {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .toggle-btn {
+    display: none;
+  }
+
+  .logo {
+    font-size: 35px;
+    margin-left: 80px;
+  }
+
+  .navbarLinks {
+    position: fixed;
+    z-index: 100;
+    background-color: unset;
+    box-shadow: unset;
+    right: 0;
+    height: 40px;
+    margin-left: 25%;
+    margin-top: -65px;
+  }
+
+  nav li a,
+  .contact p {
+    font-size: 25px;
+    line-height: 35px;
+  }
+
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    width: 100vw;
+  }
+
+  #home,
+  .about {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    padding: 150px 100px 50px;
+  }
+
+  #home h3,
+  #home b,
+  #home strong {
+    font-size: 30px;
+  }
+
+  #home div.flex {
+    align-items: start;
+    width: 100%;
+    padding: 0;
+    margin-left: 50px;
+  }
+
+  #home p,
+  #about p {
+    font-size: 25px;
+    line-height: 30px;
+    margin: 50px 0;
+  }
+
+  #about p {
+    padding: 0;
+    margin: 40px;
+  }
+
+  .button {
+    padding: 14px;
+    font-size: 20px;
+    margin: 50px;
+  }
+
+  h2.span {
+    font-size: 40px;
+  }
+
+  .about {
+    padding: 50px;
+  }
+
+  #about .myCer {
+    font-size: 40px;
+    margin-bottom: 90px;
+  }
+
+  .small {
+    display: none;
+  }
+
+  .large {
+    display: flex;
+    gap: 120px;
+  }
+
+  .skill,
+  .outer {
+    height: 230px;
+    width: 230px;
+    padding: 20px;
+  }
+
+  .inner {
+    height: 190px;
+    width: 190px;
+  }
+
+  .svg {
+    margin: -232px 1px 1px 1px;
+    height: 230px;
+    width: 230px;
+  }
+
+  circle {
+    stroke-width: 20px;
+    stroke-dasharray: 660;
+    stroke-dashoffset: 660;
+  }
+
+  #html,
+  #css,
+  #js {
+    font-size: 40px;
+  }
+
+
+  .html {
+    stroke-dashoffset: 64;
+  }
+
+  .css {
+    stroke-dashoffset: 98;
+  }
+
+  .js {
+    stroke-dashoffset: 230;
+  }
+
+  .soft {
+    margin: 35px;
+    padding: 20px;
+  }
+
+  .skills-img {
+    width: 220px;
+    padding: 50px;
+  }
+
+  #skills h4 {
+    margin-left: -55%;
+    font-size: 40px;
+    margin-top: 100px;
+  }
+
+  #skills h4 img {
+    width: 35px;
+  }
+
+  #skills p {
+    margin-top: 40px;
+    font-size: 40px;
+  }
+
+  .para {
+    line-height: 20px;
+  }
+
+  .projects-container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .project-popup-btn {
+    font-size: 18px;
+    margin: 20px 10px 20px 45%;
+  }
+
+  #project-popup {
+    width: 60vw;
+    left: 19%;
+  }
+
+  .cards {
+    width: 22%;
+    padding: 5px;
+    margin: 20px 15px 100px;
+  }
+
+  .myform {
+    padding: 50px;
+  }
+
+  .contact input,
+  textarea {
+    padding: 16px 30px;
+    font-size: 30px;
+    border-radius: 28px;
+  }
+
+  #submit {
+    height: 70px;
+    width: 230px;
+    font-size: 30px;
+  }
+
+  .media img {
+    margin: 20px 50px;
+    height: 54px;
+    width: 54px;
   }
 }
