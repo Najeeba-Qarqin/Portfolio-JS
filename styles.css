@@ -155,8 +155,8 @@ nav li a:hover {
 .skills-img {
   background: url(images/bgSkills.png) no-repeat;
   background-size: cover;
-  width: 70px;
-  padding: 12px;
+  width: 85px;
+  padding: 15px;
 }
 
 .outer {
@@ -199,38 +199,15 @@ circle {
 }
 
 .html {
-  animation: html 3s linear forwards;
+  stroke-dashoffset: 15;
 }
 
 .css {
-  animation: css 3s linear forwards;
+  stroke-dashoffset: 22;
 }
 
 .js {
-  animation: js 3s linear forwards;
-}
-
-@keyframes html {
-  100% {
-    stroke-dashoffset: 15;
-  }
-}
-
-@keyframes css {
-  100% {
-    stroke-dashoffset: 22;
-  }
-}
-
-@keyframes js {
-  100% {
-    stroke-dashoffset: 55;
-  }
-}
-
-#projects {
-  padding: 20px;
-  width: 100%;
+  stroke-dashoffset: 55;
 }
 
 .project-cart {
@@ -354,4 +331,97 @@ textarea {
 .email {
   width: 25px;
   height: 20px;
+}
+
+@media (min-width: 700px) {
+  .navbarLinks {
+    padding: 40px;
+  }
+
+  .logo {
+    margin-right: 50px;
+  }
+
+  #home p {
+    margin: 25px 100px 40px;
+  }
+
+  #about-p {
+    padding: 20px 90px;
+  }
+
+  .certificates-container {
+    display: flex;
+    flex-direction: row;
+    font-size: 20px;
+  }
+
+  .certificates {
+    width: 65%;
+  }
+
+  .myCer {
+    font-size: 24px;
+    padding: 50px;
+  }
+
+  .images {
+    width: 418px;
+    height: 300px;
+    margin-top: 30px;
+  }
+
+  .skills-container {
+    display: flex;
+    flex-direction: row;
+    gap: 52px;
+  }
+
+  .large {
+    display: none;
+  }
+
+  .para {
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  #projects-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 20px;
+  }
+
+  .project-cart {
+    margin: 24px;
+    border-radius: 20px;
+    width: 37vw;
+    padding: 20px;
+  }
+
+  #project-popup {
+    width: 75vw;
+    left: 12%;
+  }
+
+  .project-popup {
+    display: flex;
+    flex-direction: row;
+    top: 25%;
+    width: 80vw;
+    padding: 30px;
+    height: fit-content;
+  }
+
+  #popup-image {
+    width: 50%;
+    padding: 10px;
+    margin: 10px;
+  }
+
+  .contact p,
+  .contact .myform {
+    width: 70%;
+  }
 }

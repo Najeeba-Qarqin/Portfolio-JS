@@ -14,7 +14,7 @@ document.querySelectorAll('#mobile-menu a').forEach((link) =>
     closeList.classList.toggle('hidden');
     humburegerMenu.classList.toggle('hidden');
   }
-  ));
+));
 
 closeList.addEventListener('click', () => {
   mobileMenu.classList.add('hidden');
@@ -42,7 +42,7 @@ function handleScroll() {
       menuLinks.forEach(link => {
         link.classList.remove('active');
       });
-      document.querySelector(`nav > ul > li > a[href='#${sectionId}']`).classList.add('active');
+      document.querySelector(`nav > ul > li > a[href="#${sectionId}"]`).classList.add('active');
     }
   });
 }
@@ -53,19 +53,19 @@ window.addEventListener('scroll', handleScroll);
 const home = document.getElementById('home');
 
 home.innerHTML = `
-<img class='images' src='./images/home.jpg' alt='Profile' />
-<h3>Hello, <span class='span'>there!</span></h3>
-<b><span class='span'>I'm</span> Najeeba Qarqin</b>
+<img class="images" src="./images/home.jpg" alt="Profile" />
+<div class='flex'>
+<h3>Hello, <span class="span">there!</span></h3>
+<b><span class='span'>I'm</span> Najeeba Qarqin</b><br>
 <strong>FrontEnd <span class='span'>Web Developer</span></strong>
 <p class='para'>Skilled in HTML, CSS and javaScript languages and Git, GitHub and VS code tools, interested to design and develope great websites.</p>
-<div>
+<div class='btns row'>
 <a class='button' href='#about'>Learn More</a>
 <a class='button' href='#contact'>Contact Me</a>
 </div>
+</div>
 `
-
-const about = document.getElementById('about-content');
-
+const about = document.getElementById('about');
 const skills = {
   languages: ['HTML', 'CSS', 'javaScript'],
   tools: ['Git', 'GitHUb', 'VS Code'],
@@ -77,90 +77,97 @@ const skills = {
 
 about.innerHTML = `
   <h2 class="span">About Me</h2>
-  <img class='images' src='images/about.jpg'>
+  <div class='about'>
+  <img class="images" src="images/about.jpg" alt="">
+  <div class='about-p'>
   <p class='para' id='about-p'>I'm <b class='span'>Najeeba Qarqin</b> a Web Developement student at Kick-Start i learned responsive web design and javaScript programing language and attained the free code camp certifications of Responsive Web Design and JavaScript Algorthms And Data Structure programs.
   Actively i'm increasing my web developing skills to be a profissional web developer and apply my acquired skills and knowlage to real-world projects.</p>
-  <p class='para'>Email: <a href='https://najeebaqarqin@gmail.com' class='span'>najeebaqarqin@gmail.com</a></p>
+  <p class='para'>Email: <a href='https://najeebaqarqin@gmail.com' class='span' target='_blank'>najeebaqarqin@gmail.com</a></p>
   <p class='para'><b class='span'>Languages</b>: ${skills.languages.join(', ')}</p>
   <p class='para'><b class='span'>Tools</b>: ${skills.tools.join(', ')}</p>
-  <p>My <b class='span'>Certifications</b>: </p>
-  <div class='certificates-container flex'>
+  </div>
+  </div>
+  <div>
+  <p class='myCer'>My <b class='span'>Certifications</b>: </p>
+  <div class="certificates-container flex">
   ${skills.certification.map((certificate) =>
   `
   <div>
     <a href='${certificate.link}' target='_blank'>
-      <img src='${certificate.image}' alt='${certificate.name}' class='certificates'>
+      <img src='${certificate.image}' alt='${certificate.name}' class="certificates">
       </a>
       <p>${certificate.name}</p>
+      <a class='button' href='${certificate.link}' target='_blank'>Visit</a>
       </div>
       `
 ).join('')}
       </div>
+      </div>
     `;
 
-const skillsContainer = document.getElementById('skills');
+    const skillsContainer = document.getElementById('skills');
 
-skillsContainer.innerHTML = `
+    skillsContainer.innerHTML = `
     <h2 class='skills-title span'>Skills</h2>
     <h4>Technical Skills <img width='15px' src='./images/skills.png'/></h4><br>
     <div class='skills-container row small'>
-    <div class='skill'>
-      <div class='outer'>
-        <div class='inner'>
-          <div id='html'>95%</div>
+    <div class="skill">
+      <div class="outer">
+        <div class="inner">
+          <div id="html">95%</div>
         </div>
       </div>
-      <svg class='svg'><circle class='html'  cx='40' cy='40' r='36' stroke-linecap='round' /></svg>
+      <svg class="svg"><circle class='html'  cx="40" cy="40" r="36" stroke-linecap="round" /></svg>
       <p>HTML</p>
     </div>
-        <div class='skill'>
-      <div class='outer'>
-        <div class='inner'>
-          <div id='css'>90%</div>
+        <div class="skill">
+      <div class="outer">
+        <div class="inner">
+          <div id="css">90%</div>
         </div>
       </div>
-      <svg class='svg'><circle class='css' cx='40' cy='40' r='36' stroke-linecap='round' /></svg>
+      <svg class="svg"><circle class='css' cx="40" cy="40" r="36" stroke-linecap="round" /></svg>
       <p>CSS</p>
     </div>
-        <div class='skill'>
-      <div class='outer'>
-        <div class='inner'>
-          <div id='js'>70%</div>
+        <div class="skill">
+      <div class="outer">
+        <div class="inner">
+          <div id="js">70%</div>
         </div>
       </div>
-      <svg class='svg'><circle class='js'  cx='40' cy='40' r='36' stroke-linecap='round' /></svg>
+      <svg class="svg"><circle class='js'  cx="40" cy="40" r="36" stroke-linecap="round" /></svg>
       <p>javaScript</p>
     </div>
     </div>
 
 
     
-        <div class='skills-container row large'>
-    <div class='skill'>
-      <div class='outer'>
-        <div class='inner'>
-          <div id='html'>95%</div>
+    <div class='skills-container row large'>
+    <div class="skill">
+      <div class="outer">
+        <div class="inner">
+          <div id="html">95%</div>
         </div>
       </div>
-      <svg class='svg'><circle class='html'  cx='75' cy='75' r='67' stroke-linecap='round' /></svg>
+      <svg class="svg"><circle class='html'  cx="115" cy="115" r="108" stroke-linecap="round" /></svg>
       <p class='para'>HTML</p>
     </div>
-        <div class='skill'>
-      <div class='outer'>
-        <div class='inner'>
-          <div id='css'>90%</div>
+        <div class="skill">
+      <div class="outer">
+        <div class="inner">
+          <div id="css">90%</div>
         </div>
       </div>
-      <svg class='svg'><circle class='css' cx='75' cy='75' r='67' stroke-linecap='round' /></svg>
+      <svg class="svg"><circle class='css'   cx="115" cy="115" r="108" stroke-linecap="round" /></svg>
       <p class='para'>CSS</p>
     </div>
-        <div class='skill'>
-      <div class='outer'>
-        <div class='inner'>
-          <div id='js'>70%</div>
+        <div class="skill">
+      <div class="outer">
+        <div class="inner">
+          <div id="js">70%</div>
         </div>
       </div>
-      <svg class='svg'><circle class='js'  cx='75' cy='75' r='67' stroke-linecap='round' /></svg>
+      <svg class="svg"><circle class='js'  cx="115" cy="115" r="108" stroke-linecap="round" /></svg>
       <p class='para'>javaScript</p>
       </div>
     </div>
@@ -271,7 +278,7 @@ projectsContainer.innerHTML = projects.map(
   (projects, index) => `
   <div class='project-cart flex cards'>
     <h3 class='span'>${projects.title}</h3>
-    <img class='projects-images' src='${projects.image}' />
+    <img class="projects-images" src='${projects.image}' />
     <p class='para'>${projects.shortDescription}</p>
     <button class='project-popup-btn span' onclick='showPopup(${index})'>See More<span class='white'> <img width='10px' src='./images/submit.png'/></span></button>
   </div>
@@ -283,7 +290,7 @@ function showPopup(index) {
   popupContent.innerHTML = `
   <h3 class='span'>${project.title}</h3>
   <div class='project-popup flex'>
-    <img class='projects-images' id='popup-image' src='${project.image}' alt='project-img' />
+    <img class="projects-images" id='popup-image' src='${project.image}' alt='project-img' />
     <p class='para'>${project.longDescription}</p>
     </div>
     <h2 class='para'><span class='span'>Technologies</span>: ${project.technology.join(', ')}</h2>
@@ -311,15 +318,15 @@ form.addEventListener('submit', (e) => {
   var email_checker = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.com$/;
   if (name.value === '' || name.value === null) {
     e.preventDefault();
-    name_error.innerHTML = 'Name is required!';
+    name_error.innerHTML = "Name is required!";
   } else {
-    name_error.innerHTML = '';
+    name_error.innerHTML = "";
   }
   if (!email.value.match(email_checker)) {
     e.preventDefault();
-    email_error.innerText = 'Please enter a valid email address!'
+    email_error.innerText = "Please enter a valid email address!"
   } else {
-    email_error.innerText = '';
+    email_error.innerText = ""
   }
   if (message.value.length <= 25) {
     e.preventDefault();
