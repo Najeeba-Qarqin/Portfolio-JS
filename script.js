@@ -14,7 +14,7 @@ document.querySelectorAll('#mobile-menu a').forEach((link) =>
     closeList.classList.toggle('hidden');
     humburegerMenu.classList.toggle('hidden');
   }
-));
+  ));
 
 closeList.addEventListener('click', () => {
   mobileMenu.classList.add('hidden');
@@ -28,18 +28,18 @@ const menuLinks = document.querySelectorAll('nav ul li a');
 function isInViewport(element) {
   const rect = element.getBoundingClientRect();
   return (
-    rect.top >= 0 &&
-    rect.left >= 0 &&
-    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    rect.top >= 0
+    && rect.left >= 0
+    && rect.bottom <= (window.innerHeight || document.documentElement.clientHeight)
+    && rect.right <= (window.innerWidth || document.documentElement.clientWidth)
   );
 }
 
 function handleScroll() {
-  sections.forEach(section => {
+  sections.forEach((section) => {
     if (isInViewport(section)) {
       const sectionId = section.id;
-      menuLinks.forEach(link => {
+      menuLinks.forEach((link) => {
         link.classList.remove('active');
       });
       document.querySelector(`nav > ul > li > a[href="#${sectionId}"]`).classList.add('active');
@@ -48,7 +48,6 @@ function handleScroll() {
 }
 
 window.addEventListener('scroll', handleScroll);
-
 
 const home = document.getElementById('home');
 
@@ -64,7 +63,7 @@ home.innerHTML = `
 <a class='button' href='#contact'>Contact Me</a>
 </div>
 </div>
-`
+`;
 const about = document.getElementById('about');
 const skills = {
   languages: ['HTML', 'CSS', 'javaScript'],
@@ -90,8 +89,7 @@ about.innerHTML = `
   <div>
   <p class='myCer'>My <b class='span'>Certifications</b>: </p>
   <div class="certificates-container flex">
-  ${skills.certification.map((certificate) =>
-  `
+  ${skills.certification.map((certificate) => `
   <div>
     <a href='${certificate.link}' target='_blank'>
       <img src='${certificate.image}' alt='${certificate.name}' class="certificates">
@@ -99,15 +97,14 @@ about.innerHTML = `
       <p>${certificate.name}</p>
       <a class='button' href='${certificate.link}' target='_blank'>Visit</a>
       </div>
-      `
-).join('')}
+      `).join('')}
       </div>
       </div>
     `;
 
-    const skillsContainer = document.getElementById('skills');
+const skillsContainer = document.getElementById('skills');
 
-    skillsContainer.innerHTML = `
+skillsContainer.innerHTML = `
     <h2 class='skills-title span'>Skills</h2>
     <h4>Technical Skills <img width='15px' src='./images/skills.png'/></h4><br>
     <div class='skills-container row small'>
@@ -285,7 +282,7 @@ projectsContainer.innerHTML = projects.map(
   `
 ).join('');
 
-function showPopup(index) {
+(index) => {
   const project = projects[index];
   popupContent.innerHTML = `
   <h3 class='span'>${project.title}</h3>
@@ -298,41 +295,40 @@ function showPopup(index) {
     <a class='button' href='${project.liveLink}' target='_blank'>Live Demo</a>
     <a class='button' href='${project.sourceLink}' target='_blank'>Source</a>
     </div>
-  `
+  `;
   popup.classList.remove('hidden');
-};
+}
 
 popupBtn.addEventListener('click', () => {
   popup.classList.add('hidden');
 });
 
-
 const form = document.getElementById('myform');
 const name = document.getElementById('name');
 const email = document.getElementById('email');
 const message = document.getElementById('message');
-const name_error = document.getElementById('name_error');
-const email_error = document.getElementById('email_error');
-const message_error = document.getElementById('message-error');
+const nameError = document.getElementById('name_error');
+const emailError = document.getElementById('email_error');
+const messageError = document.getElementById('message-error');
 form.addEventListener('submit', (e) => {
-  var email_checker = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.com$/;
+  let emailChecker = /^([A-Za-z0-9_\-.])+([A-Za-z0-9_\-])+\.com$/;
   if (name.value === '' || name.value === null) {
     e.preventDefault();
-    name_error.innerHTML = "Name is required!";
+    nameError.innerHTML = 'Name is required!';
   } else {
-    name_error.innerHTML = "";
+    nameError.innerHTML = '';
   }
-  if (!email.value.match(email_checker)) {
+  if (!email.value.match(emailChecker)) {
     e.preventDefault();
-    email_error.innerText = "Please enter a valid email address!"
+    emailError.innerText = 'Please enter a valid email address!';
   } else {
-    email_error.innerText = ""
+    emailError.innerText = '';
   }
   if (message.value.length <= 25) {
     e.preventDefault();
-    message_error.innerHTML = 'Please write a message!';
+    messageError.innerHTML = 'Please write a message!';
   } else {
-    message_error.innerHTML = '';
+    messageError.innerHTML = '';
   }
 });
 const formFields = ['name', 'email', 'message'];
