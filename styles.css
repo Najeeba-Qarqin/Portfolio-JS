@@ -9,7 +9,7 @@
 
 html {
   box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.5);
-  background-color: #29303B;
+  background-color: #29303b;
 }
 
 header {
@@ -18,7 +18,7 @@ header {
   position: fixed;
   top: 0;
   left: 0;
-  background-color: #29303B;
+  background-color: #29303b;
   padding: 0 25px;
   height: 40px;
   width: 100vw;
@@ -27,7 +27,7 @@ header {
 
 .logo {
   margin: 10px;
-  color: #51D1D9;
+  color: #51D1d9;
   font-family: "Fleur De Leah", cursive;
   font-weight: 100;
 }
@@ -56,17 +56,17 @@ nav li a {
   width: 100vw;
   padding: 20px;
   left: 0;
-  background-color: #29303B;
-  box-shadow: 0 0 10px #51D1D9;
+  background-color: #29303b;
+  box-shadow: 0 0 10px #51D1d9;
 }
 
 nav li a.active,
 nav li a:hover {
-  color: #51D1D9;
+  color: #51D1d9;
 }
 
 .span {
-  color: #51D1D9;
+  color: #51D1d9;
 }
 
 .para {
@@ -134,10 +134,6 @@ nav li a:hover {
   width: 80px;
 }
 
-.skill p {
-  text-align: center;
-}
-
 .row {
   display: flex;
   flex-direction: row;
@@ -177,12 +173,6 @@ nav li a:hover {
   box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2), inset -4px -4px 6px -1px rgba(225, 225, 225, 0.2), 0.5px 0.5px 0px rgba(0, 0, 0, 0.15), 0px 12px 10px -10px rgba(0, 0, 0, 0.5);
 }
 
-#html,
-#css,
-#js {
-  font-size: 12px;
-}
-
 .svg {
   position: absolute;
   margin: -80px 1px 1px 0.3px;
@@ -195,7 +185,7 @@ circle {
   stroke-width: 8px;
   stroke-dasharray: 208;
   stroke-dashoffset: 208;
-  stroke: #51D1D9;
+  stroke: #51D1d9;
 }
 
 .html {
@@ -241,7 +231,7 @@ circle {
   top: 10%;
   left: 5%;
   z-index: 100;
-  background-color: #29303B;
+  background-color: #29303b;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
   border-radius: 15px;
   width: 90%;
@@ -267,18 +257,14 @@ circle {
 .button {
   padding: 6px;
   border-radius: 10px;
-  border: 2px solid #A4FAFF;
+  border: 2px solid #a4faff;
   cursor: pointer;
-  background: #51D1D9;
+  background: #51d1d9;
   text-decoration: none;
   margin: 10px 29px;
   font-weight: 700;
   font-size: 10px;
   box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.1);
-}
-
-.contact p {
-  width: 266px;
 }
 
 .myform {
@@ -310,7 +296,7 @@ textarea {
   width: 80px;
   height: 25px;
   background-color: #51d1d9;
-  border: 2px solid #51D1D9;
+  border: 2px solid #51d1d9;
   border-radius: 25px;
 }
 
@@ -340,6 +326,19 @@ textarea {
 
   .logo {
     margin-right: 50px;
+  }
+
+  .skill p {
+    text-align: center;
+  }
+
+  .contact p {
+    width: 266px;
+  }
+
+  .contact p,
+  .contact .myform {
+    width: 80%;
   }
 
   #home p {
@@ -409,20 +408,14 @@ textarea {
     display: flex;
     flex-direction: row;
     top: 25%;
-    width: 80vw;
     padding: 30px;
-    height: fit-content;
+    height: 300px;
   }
 
   #popup-image {
     width: 50%;
     padding: 10px;
     margin: 10px;
-  }
-
-  .contact p,
-  .contact .myform {
-    width: 80%;
   }
 
   .error {
@@ -476,13 +469,13 @@ textarea {
     display: flex;
     flex-direction: row;
     align-items: start;
-    padding: 150px 100px 50px;
+    padding: 100px 100px 50px;
   }
 
   #home h3,
   #home b,
   #home strong {
-    font-size: 30px;
+    font-size: 25px;
   }
 
   #home div.flex {
@@ -494,7 +487,7 @@ textarea {
 
   #home p,
   #about p {
-    font-size: 25px;
+    font-size: 20px;
     line-height: 30px;
     margin: 50px 0;
   }
@@ -562,7 +555,6 @@ textarea {
     font-size: 40px;
   }
 
-
   .html {
     stroke-dashoffset: 64;
   }
@@ -589,6 +581,12 @@ textarea {
     margin-left: -55%;
     font-size: 40px;
     margin-top: 100px;
+  }
+
+  .media img {
+    margin: 20px 50px;
+    height: 54px;
+    width: 54px;
   }
 
   #skills h4 img {
@@ -620,9 +618,9 @@ textarea {
   }
 
   .cards {
-    width: 22%;
-    padding: 5px;
-    margin: 20px 15px 100px;
+    width: 30%;
+    padding: 25px;
+    margin: 0px 120px 100px;
   }
 
   .myform {
@@ -640,11 +638,5 @@ textarea {
     height: 70px;
     width: 230px;
     font-size: 30px;
-  }
-
-  .media img {
-    margin: 20px 50px;
-    height: 54px;
-    width: 54px;
   }
 }
