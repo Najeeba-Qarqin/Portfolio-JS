@@ -9,10 +9,10 @@ humburegerMenu.addEventListener('click', () => {
 });
 
 document.querySelectorAll('#mobile-menu a').forEach((link) => link.addEventListener('click', () => {
-    mobileMenu.classList.add('hidden');
-    closeList.classList.toggle('hidden');
-    humburegerMenu.classList.toggle('hidden');
-  },));
+  mobileMenu.classList.add('hidden');
+  closeList.classList.toggle('hidden');
+  humburegerMenu.classList.toggle('hidden');
+}));
 
 closeList.addEventListener('click', () => {
   mobileMenu.classList.add('hidden');
@@ -280,7 +280,7 @@ projectsContainer.innerHTML = projects.map(
   `,
 ).join('');
 
-(index) => {
+function showPopup(index) {
   const project = projects[index];
   popupContent.innerHTML = `
   <h3 class='span'>${project.title}</h3>
@@ -295,6 +295,7 @@ projectsContainer.innerHTML = projects.map(
     </div>
   `;
   popup.classList.remove('hidden');
+  showPopup();
 };
 
 popupBtn.addEventListener('click', () => {
