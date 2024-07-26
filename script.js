@@ -295,6 +295,7 @@ const showPopup = (index) => {
     </div>
   `;
   popup.classList.remove('hidden');
+  console.log(showPopup);
 };
 
 popupBtn.addEventListener('click', () => {
