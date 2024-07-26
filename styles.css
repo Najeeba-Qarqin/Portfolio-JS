@@ -27,7 +27,7 @@ header {
 
 .logo {
   margin: 10px;
-  color: #51D1d9;
+  color: #51d1d9;
   font-family: "Fleur De Leah", cursive;
   font-weight: 100;
 }
@@ -57,16 +57,16 @@ nav li a {
   padding: 20px;
   left: 0;
   background-color: #29303b;
-  box-shadow: 0 0 10px #51D1d9;
+  box-shadow: 0 0 10px #51d1d9;
 }
 
 nav li a.active,
 nav li a:hover {
-  color: #51D1d9;
+  color: #51d1d9;
 }
 
 .span {
-  color: #51D1d9;
+  color: #51d1d9;
 }
 
 .para {
@@ -170,7 +170,7 @@ nav li a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2), inset -4px -4px 6px -1px rgba(225, 225, 225, 0.2), 0.5px 0.5px 0px rgba(0, 0, 0, 0.15), 0px 12px 10px -10px rgba(0, 0, 0, 0.5);
+  box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2), inset -4px -4px 6px -1px rgba(225, 225, 225, 0.2), 0.5px 0.5px 0.1px rgba(0, 0, 0, 0.15), 0.1px 12px 10px -10px rgba(0, 0, 0, 0.5);
 }
 
 .svg {
@@ -185,7 +185,7 @@ circle {
   stroke-width: 8px;
   stroke-dasharray: 208;
   stroke-dashoffset: 208;
-  stroke: #51D1d9;
+  stroke: #51d1d9;
 }
 
 .html {
@@ -424,7 +424,7 @@ textarea {
 }
 
 @media (min-width: 1000px) {
-  nav>.hidden {
+  nav > .hidden {
     display: flex;
     flex-direction: row;
   }
@@ -620,7 +620,7 @@ textarea {
   .cards {
     width: 30%;
     padding: 25px;
-    margin: 0px 120px 100px;
+    margin: 0 120px 100px;
   }
 
   .myform {

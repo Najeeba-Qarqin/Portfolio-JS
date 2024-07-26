@@ -8,13 +8,11 @@ humburegerMenu.addEventListener('click', () => {
   humburegerMenu.classList.toggle('hidden');
 });
 
-document.querySelectorAll('#mobile-menu a').forEach((link) =>
-  link.addEventListener('click', () => {
+document.querySelectorAll('#mobile-menu a').forEach((link) => link.addEventListener('click', () => {
     mobileMenu.classList.add('hidden');
     closeList.classList.toggle('hidden');
     humburegerMenu.classList.toggle('hidden');
-  }
-  ));
+  },));
 
 closeList.addEventListener('click', () => {
   mobileMenu.classList.add('hidden');
@@ -279,7 +277,7 @@ projectsContainer.innerHTML = projects.map(
     <p class='para'>${projects.shortDescription}</p>
     <button class='project-popup-btn span' onclick='showPopup(${index})'>See More<span class='white'> <img width='10px' src='./images/submit.png'/></span></button>
   </div>
-  `
+  `;
 ).join('');
 
 (index) => {
@@ -297,7 +295,7 @@ projectsContainer.innerHTML = projects.map(
     </div>
   `;
   popup.classList.remove('hidden');
-}
+};
 
 popupBtn.addEventListener('click', () => {
   popup.classList.add('hidden');
@@ -311,7 +309,7 @@ const nameError = document.getElementById('name_error');
 const emailError = document.getElementById('email_error');
 const messageError = document.getElementById('message-error');
 form.addEventListener('submit', (e) => {
-  let emailChecker = /^([A-Za-z0-9_\-.])+([A-Za-z0-9_\-])+\.com$/;
+  const emailChecker = /^([A-Za-z0-9_\-.])+([A-Za-z0-9_])+\.com$/;
   if (name.value === '' || name.value === null) {
     e.preventDefault();
     nameError.innerHTML = 'Name is required!';
@@ -336,6 +334,6 @@ formFields.forEach((field) => {
   const input = document.getElementById(field);
   input.value = localStorage.getItem(field) || '';
   input.addEventListener('input', () => {
-    localStorage.setItem(field, input.value)
+    localStorage.setItem(field, input.value);
   });
 });
