@@ -277,7 +277,7 @@ projectsContainer.innerHTML = projects.map(
     <p class='para'>${projects.shortDescription}</p>
     <button class='project-popup-btn span' onclick='showPopup(${index})'>See More<span class='white'> <img width='10px' src='./images/submit.png'/></span></button>
   </div>
-  `;
+  `,
 ).join('');
 
 (index) => {
