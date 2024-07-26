@@ -280,7 +280,7 @@ projectsContainer.innerHTML = projects.map(
   `,
 ).join('');
 
-const showPopup = (index) => {
+function showPopup(index) {
   const project = projects[index];
   popupContent.innerHTML = `
   <h3 class='span'>${project.title}</h3>
@@ -295,7 +295,6 @@ const showPopup = (index) => {
     </div>
   `;
   popup.classList.remove('hidden');
-  console.log(showPopup);
 };
 
 popupBtn.addEventListener('click', () => {
