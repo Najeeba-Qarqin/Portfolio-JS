@@ -55,7 +55,7 @@ home.innerHTML = `
 <h3>Hello, <span class="span">there!</span></h3>
 <b><span class='span'>I'm</span> Najeeba Qarqin</b><br>
 <strong>FrontEnd <span class='span'>Web Developer</span></strong>
-<p class='para'>Skilled in HTML, CSS and javaScript languages and Git, GitHub and VS code tools, interested to design and develope great websites.</p>
+<p class='para'>Skilled in HTML, CSS and javaScript languages and Git, GitHub tools, interested to design and develope great websites.</p>
 <div class='btns row'>
 <a class='button' href='#about'>Learn More</a>
 <a class='button' href='#contact'>Contact Me</a>
@@ -65,7 +65,7 @@ home.innerHTML = `
 const about = document.getElementById('about');
 const skills = {
   languages: ['HTML', 'CSS', 'javaScript'],
-  tools: ['Git', 'GitHUb', 'VS Code'],
+  tools: ['Git', 'GitHUb'],
   certification: [
     { name: 'Web Design', link: 'www.com', image: './images/webDesign.png' },
     { name: 'JavaScript', link: 'www.com', image: './images/JS.png' },
@@ -99,95 +99,6 @@ about.innerHTML = `
       </div>
       </div>
     `;
-
-const skillsContainer = document.getElementById('skills');
-
-skillsContainer.innerHTML = `
-    <h2 class='skills-title span'>Skills</h2>
-    <h4>Technical Skills <img width='15px' src='./images/skills.png'/></h4><br>
-    <div class='skills-container row small'>
-    <div class="skill">
-      <div class="outer">
-        <div class="inner">
-          <div id="html">95%</div>
-        </div>
-      </div>
-      <svg class="svg"><circle class='html'  cx="40" cy="40" r="36" stroke-linecap="round" /></svg>
-      <p>HTML</p>
-    </div>
-        <div class="skill">
-      <div class="outer">
-        <div class="inner">
-          <div id="css">90%</div>
-        </div>
-      </div>
-      <svg class="svg"><circle class='css' cx="40" cy="40" r="36" stroke-linecap="round" /></svg>
-      <p>CSS</p>
-    </div>
-        <div class="skill">
-      <div class="outer">
-        <div class="inner">
-          <div id="js">70%</div>
-        </div>
-      </div>
-      <svg class="svg"><circle class='js'  cx="40" cy="40" r="36" stroke-linecap="round" /></svg>
-      <p>javaScript</p>
-    </div>
-    </div>
-
-
-    
-    <div class='skills-container row large'>
-    <div class="skill">
-      <div class="outer">
-        <div class="inner">
-          <div id="html">95%</div>
-        </div>
-      </div>
-      <svg class="svg"><circle class='html'  cx="115" cy="115" r="105" stroke-linecap="round" /></svg>
-      <p class='para'>HTML</p>
-    </div>
-        <div class="skill">
-      <div class="outer">
-        <div class="inner">
-          <div id="css">90%</div>
-        </div>
-      </div>
-      <svg class="svg"><circle class='css'   cx="115" cy="115" r="105" stroke-linecap="round" /></svg>
-      <p class='para'>CSS</p>
-    </div>
-        <div class="skill">
-      <div class="outer">
-        <div class="inner">
-          <div id="js">70%</div>
-        </div>
-      </div>
-      <svg class="svg"><circle class='js'  cx="115" cy="115" r="105" stroke-linecap="round" /></svg>
-      <p class='para'>javaScript</p>
-      </div>
-    </div>
-    <br><br><br>
-    <h4 class='title'>Soft Skills <img width='15px' src='./images/skills.png'/></h4>
-    <div class='row'>
-    <div class='flex'>
-    <div class='soft'>
-    <img class='skills-img' src='./images/teamWork.png'/>
-    </div><br>
-    <p class='para'>Team Work</p>
-    </div>
-    <div class='flex'>
-    <div class='soft'>
-    <img class='skills-img' src='./images/codeReveiw.png'/>
-    </div><br>
-    <p class='para'>Code Reveiw</p>
-    </div>
-    <div  class='flex'>
-    <div class='soft'>
-    <img class='skills-img' src='./images/cleanCode.png'/>
-    </div><br>
-    <p class='para'>Clean Code</p>
-    </div>
-`;
 
 const projectsContainer = document.getElementById('projects-container');
 const popup = document.getElementById('project-popup');
@@ -309,7 +220,7 @@ const nameError = document.getElementById('name_error');
 const emailError = document.getElementById('email_error');
 const messageError = document.getElementById('message-error');
 form.addEventListener('submit', (e) => {
-  const emailChecker = /^([A-Za-z0-9_\-.])+([A-Za-z0-9_])+\.com$/;
+  const emailChecker = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.com$/;
   if (name.value === '' || name.value === null) {
     e.preventDefault();
     nameError.innerHTML = 'Name is required!';
@@ -322,7 +233,7 @@ form.addEventListener('submit', (e) => {
   } else {
     emailError.innerText = '';
   }
-  if (message.value.length <= 25) {
+  if (message.value.length <= 2) {
     e.preventDefault();
     messageError.innerHTML = 'Please write a message!';
   } else {

@@ -122,7 +122,7 @@ nav li a:hover {
 }
 
 #skills {
-  padding: 30px;
+  padding: 50px;
 }
 
 #skills h4 {
@@ -198,6 +198,10 @@ circle {
 
 .js {
   stroke-dashoffset: 55;
+}
+
+.projects {
+  padding-top: 60px;
 }
 
 .project-cart {
@@ -334,6 +338,10 @@ textarea {
 
   .skill p {
     text-align: center;
+  }
+
+  #contact {
+    padding-top: 50px;
   }
 
   .contact p,
