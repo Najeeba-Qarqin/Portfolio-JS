@@ -94,7 +94,7 @@ popupBtn.addEventListener('click', () => {
 ## Demo 📸
 
 
-![Demo](/images/DEMO1.png)
+![Demo](/images/DEMO.png)
 
 
 ### Live Link
