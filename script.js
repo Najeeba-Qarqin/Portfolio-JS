@@ -206,7 +206,8 @@ function showPopup(index) {
     </div>
   `;
   popup.classList.remove('hidden');
-};
+  return showPopup();
+}
 
 popupBtn.addEventListener('click', () => {
   popup.classList.add('hidden');
@@ -220,7 +221,7 @@ const nameError = document.getElementById('name_error');
 const emailError = document.getElementById('email_error');
 const messageError = document.getElementById('message-error');
 form.addEventListener('submit', (e) => {
-  const emailChecker = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.com$/;
+  const emailChecker =  /^[\w\.-]+@[a-zA-Z\d\.-]+\.[a-zA-Z]{2,}$/;
   if (name.value === '' || name.value === null) {
     e.preventDefault();
     nameError.innerHTML = 'Name is required!';
