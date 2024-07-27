@@ -206,7 +206,6 @@ function showPopup(index) {
     </div>
   `;
   popup.classList.remove('hidden');
-  return showPopup();
 }
 
 popupBtn.addEventListener('click', () => {
@@ -221,7 +220,7 @@ const nameError = document.getElementById('name_error');
 const emailError = document.getElementById('email_error');
 const messageError = document.getElementById('message-error');
 form.addEventListener('submit', (e) => {
-  const emailChecker =  /^[\w\.-]+@[a-zA-Z\d\.-]+\.[a-zA-Z]{2,}$/;
+  const emailChecker = /^[\w-]+@[a-zA-Z\d-]+\.[a-zA-Z]{2,}$/;
   if (name.value === '' || name.value === null) {
     e.preventDefault();
     nameError.innerHTML = 'Name is required!';
@@ -234,7 +233,7 @@ form.addEventListener('submit', (e) => {
   } else {
     emailError.innerText = '';
   }
-  if (message.value.length <= 2) {
+  if (message.value.length <= 12) {
     e.preventDefault();
     messageError.innerHTML = 'Please write a message!';
   } else {
@@ -249,3 +248,4 @@ formFields.forEach((field) => {
     localStorage.setItem(field, input.value);
   });
 });
+showPopup();
