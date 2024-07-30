@@ -67,8 +67,8 @@ const skills = {
   languages: ['HTML', 'CSS', 'javaScript'],
   tools: ['Git', 'GitHUb'],
   certification: [
-    { name: 'Web Design', link: 'www.com', image: './images/webDesign.png' },
-    { name: 'JavaScript', link: 'www.com', image: './images/JS.png' },
+    { name: 'Web Design', link: 'https://www.freecodecamp.org/certification/fccaf658213-24ff-48d8-a336-735deda38944/responsive-web-design', image: './images/webDesign.png' },
+    { name: 'JavaScript', link: 'https://www.freecodecamp.org/certification/fccaf658213-24ff-48d8-a336-735deda38944/javascript-algorithms-and-data-structures-v8', image: './images/JS.png' },
   ],
 };
 
@@ -130,7 +130,7 @@ const projects = [
     longDescription: 'Portfolio project a simple personal portfolio website one of certification projects in freeCodeCamp Responsive Web Design program build in HTML and designed in CSS.',
     image: './images/Portfolio.png',
     technology: ['HTML', 'CSS', 'Git', 'GitHub'],
-    liveLink: 'https://najeeba-qarqin.github.io/Prtfolio',
+    liveLink: 'https://najeeba-qarqin.github.io/Portfolio/',
     sourceLink: 'https://github.com/Najeeba-Qarqin/Portfolio',
   },
   {
@@ -175,8 +175,8 @@ const projects = [
     longDescription: 'Pokemon Search App project a simple app can show data and information about any pokemon from their ID or name, one of certification projects in freeCodeCamp Algorithms And Data Structure program build in HTML, CSS and JavaScript.',
     image: './images/PokemonSearch.png',
     technology: ['HTML', 'CSS', 'Git', 'GitHub'],
-    liveLink: 'https://najeeba-qarqin.github.io/Prtfolio',
-    sourceLink: 'https://github.com/Najeeba-Qarqin/Portfolio',
+    liveLink: 'https://najeeba-qarqin.github.io/Pokemon-searvh-app/',
+    sourceLink: 'https://github.com/Najeeba-Qarqin/Pokemon-search-app',
   },
 ];
 
@@ -220,7 +220,7 @@ const nameError = document.getElementById('name_error');
 const emailError = document.getElementById('email_error');
 const messageError = document.getElementById('message-error');
 form.addEventListener('submit', (e) => {
-  const emailChecker = /^[\w-]+@[a-zA-Z\d-]+\.[a-zA-Z]{2,}$/;
+  const emailChecker = /^[\w-]+@[a-z0-9\d-]+\.[a-z]{2,}$/;
   if (name.value === '' || name.value === null) {
     e.preventDefault();
     nameError.innerHTML = 'Name is required!';
