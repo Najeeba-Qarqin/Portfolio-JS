@@ -221,6 +221,7 @@ const emailError = document.getElementById('email_error');
 const messageError = document.getElementById('message-error');
 form.addEventListener('submit', (e) => {
   const emailChecker = /^[\w-]+@[a-z0-9\d-]+\.[a-z]{2,}$/;
+  const hasUpperCase = /[A-Z]/.test(email.value);
   if (name.value === '' || name.value === null) {
     e.preventDefault();
     nameError.innerHTML = 'Name is required!';
@@ -230,7 +231,11 @@ form.addEventListener('submit', (e) => {
   if (!email.value.match(emailChecker)) {
     e.preventDefault();
     emailError.innerText = 'Please enter a valid email address!';
-  } else {
+  } else if (hasUpperCase) {
+    e.preventDefault();
+    emailError.innerHTML = 'Error: Email should not contain capital letters.';
+  }
+  else {
     emailError.innerText = '';
   }
   if (message.value.length <= 12) {
