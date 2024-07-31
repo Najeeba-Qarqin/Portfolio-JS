@@ -234,8 +234,7 @@ form.addEventListener('submit', (e) => {
   } else if (hasUpperCase) {
     e.preventDefault();
     emailError.innerHTML = 'Error: Email should not contain capital letters.';
-  }
-  else {
+  } else {
     emailError.innerText = '';
   }
   if (message.value.length <= 12) {
