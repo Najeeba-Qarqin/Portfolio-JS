@@ -40,7 +40,7 @@ Examples:
 - GitHub: [Najeeba Qarqin](https://github.com/Najeeba-Qarqin)
 - UI/UX Designers:
   ####  Maryam Yousufi [Facebook](https://www.facebook.com/ada.aaramsh?mibextid=LQQJ4d), [Linkedin](https://www.linkedin.com/in/maryam-yousufi-)
-  ####  Sara Shirzad
+  ####  Sara Shirzad [Linkedin](https://www.linkedin.com/in/sara-shirzad-478696267?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app)
   ####  Sadaf Ahmadi
   ####  Farkhunda Raufi
 - Figma Design : [Link](https://www.figma.com/design/XAi1TFJ3WURDuNnBlOj5fh/Portfolio?node-id=0-1&t=N9KLDdj4iS2PXqCt-0)
