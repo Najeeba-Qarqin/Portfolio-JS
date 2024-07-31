@@ -88,12 +88,12 @@ about.innerHTML = `
   <p class='myCer'>My <b class='span'>Certifications</b>: </p>
   <div class="certificates-container flex">
   ${skills.certification.map((certificate) => `
-  <div>
+  <div class='cer'>
     <a href='${certificate.link}' target='_blank'>
       <img src='${certificate.image}' alt='${certificate.name}' class="certificates">
       </a>
       <p>${certificate.name}</p>
-      <a class='button' href='${certificate.link}' target='_blank'>Visit</a>
+      <a class='button btn' href='${certificate.link}' target='_blank'>Visit</a>
       </div>
       `).join('')}
       </div>
@@ -219,6 +219,7 @@ const message = document.getElementById('message');
 const nameError = document.getElementById('name_error');
 const emailError = document.getElementById('email_error');
 const messageError = document.getElementById('message-error');
+
 form.addEventListener('submit', (e) => {
   const emailChecker = /^[\w-]+@[a-z0-9\d-]+\.[a-z]{2,}$/;
   const hasUpperCase = /[A-Z]/.test(email.value);
@@ -233,7 +234,7 @@ form.addEventListener('submit', (e) => {
     emailError.innerText = 'Please enter a valid email address!';
   } else if (hasUpperCase) {
     e.preventDefault();
-    emailError.innerHTML = 'Error: Email should not contain capital letters.';
+    emailError.innerHTML = 'Email should not contain capital letters.';
   } else {
     emailError.innerText = '';
   }
@@ -242,6 +243,11 @@ form.addEventListener('submit', (e) => {
     messageError.innerHTML = 'Please write a message!';
   } else {
     messageError.innerHTML = '';
+  }
+  if(form.submit){
+    localStorage.clear();
+    form.submit();
+    form.reset();
   }
 });
 const formFields = ['name', 'email', 'message'];
