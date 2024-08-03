@@ -456,7 +456,7 @@ textarea {
   .navbarLinks {
     position: fixed;
     z-index: 100;
-    background-color: unset;
+    background-image: unset;
     box-shadow: unset;
     right: 0;
     height: 40px;
