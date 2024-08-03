@@ -9,20 +9,18 @@
 
 html {
   box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.5);
-  background: #282c34;
-  border: 4px solid;
-  border-image-source: linear-gradient(180deg, rgba(65, 92, 123, 0.7) 2.16%, #374855 52.06%, rgba(83, 81, 94, 0.7) 100%);
+  background-image: radial-gradient( #356383, #282c34);
+  background-attachment: fixed;
   border-radius: 50px;
 }
 
 header {
   display: flex;
   justify-content: space-between;
-  border-radius: 50px;
   position: fixed;
   top: 0;
   left: 0;
-  background: #282c34;
+  background-image: radial-gradient( #2b506a, #282c34);
   padding: 0 25px;
   height: 40px;
   width: 100vw;
@@ -60,7 +58,7 @@ nav li a {
   width: 100vw;
   padding: 20px;
   left: 0;
-  background-color: #282c34;
+  background-image: radial-gradient( #2d536e, #282c34);
   box-shadow: 0 0 10px #51d1d9;
 }
 
@@ -122,7 +120,7 @@ nav li a:hover {
 }
 
 .cer .btn {
-  padding: 10px 30px;
+  padding: 7px 25px;
   font-size: 14px;
   margin-left: 60%;
 }
@@ -254,7 +252,7 @@ circle {
   top: 10%;
   left: 5%;
   z-index: 100;
-  background-color: #29303b;
+  background-image: radial-gradient( #2d516d, #282c34);
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
   border-radius: 15px;
   width: 90%;
@@ -463,7 +461,7 @@ textarea {
     right: 0;
     height: 40px;
     margin-left: 25%;
-    margin-top: -65px;
+    margin-top: -75px;
   }
 
   nav li a,
@@ -477,7 +475,7 @@ textarea {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    height: 70px;
+    height: 80px;
     width: 100vw;
   }
 

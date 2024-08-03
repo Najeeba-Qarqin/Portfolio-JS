@@ -244,7 +244,7 @@ form.addEventListener('submit', (e) => {
   } else {
     messageError.innerHTML = '';
   }
-  if (form.submit) {
+  while (form.submit) {
     localStorage.clear();
     form.submit();
     form.reset();
