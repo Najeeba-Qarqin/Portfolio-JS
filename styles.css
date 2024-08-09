@@ -1,0 +1,658 @@
+@import url('https://fonts.googleapis.com/css2?family=Fleur+De+Leah&family=Gidugu&family=Puppies+Play&family=Rubik+Microbe&display=swap');
+
+* {
+  box-sizing: border-box;
+  transition: 0.7s ease;
+  font-family: sans-serif;
+  color: white;
+}
+
+html {
+  box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.5);
+  background-image: radial-gradient(#356383, #282c34);
+  background-attachment: fixed;
+  border-radius: 50px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-image: radial-gradient(#2b506a, #282c34);
+  padding: 0 25px;
+  height: 40px;
+  width: 100vw;
+  z-index: 100;
+}
+
+.logo {
+  margin: 10px;
+  color: #51d1d9;
+  font-family: "Fleur De Leah", cursive;
+  font-weight: 100;
+}
+
+.toggle-btn {
+  transform: rotate(90deg);
+  border: none;
+  background-color: unset;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+nav li {
+  list-style: none;
+  margin: 15px 30px;
+}
+
+nav li a {
+  text-decoration-line: none;
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.navbarLinks {
+  position: absolute;
+  width: 100vw;
+  padding: 20px;
+  left: 0;
+  background-image: radial-gradient(#2d536e, #282c34);
+  box-shadow: 0 0 10px #51d1d9;
+}
+
+nav li a.active,
+nav li a:hover {
+  color: #51d1d9;
+}
+
+.span {
+  color: #51d1d9;
+}
+
+.para {
+  font-size: 13px;
+  margin: 15px 5px;
+  line-height: 20px;
+  text-align: left;
+}
+
+.hidden {
+  display: none;
+}
+
+#home {
+  padding: 80px 20px;
+}
+
+.images {
+  margin: 25px;
+  width: 260px;
+  height: 143px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.7);
+}
+
+#home strong {
+  font-size: 18px;
+  line-height: 29px;
+}
+
+.contact p {
+  width: 266px;
+}
+
+.skill p {
+  text-align: center;
+}
+
+#home p {
+  margin: 25px 25px 40px;
+}
+
+#about {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+#about p {
+  margin: 20px;
+}
+
+.cer .btn {
+  padding: 7px 25px;
+  font-size: 14px;
+  margin-left: 60%;
+}
+
+.certificates {
+  width: 230px;
+  height: auto;
+  margin-top: 30px;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#skills {
+  padding: 50px;
+}
+
+#skills h4 {
+  margin-left: -50%;
+}
+
+.skill {
+  height: 80px;
+  width: 80px;
+  margin: 10px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.soft {
+  margin: 10px;
+}
+
+.large {
+  display: none;
+}
+
+.skills-img {
+  background: url(images/bgSkills.png) no-repeat;
+  background-size: cover;
+  width: 80px;
+  padding: 15px;
+}
+
+.outer {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  padding: 8px;
+  box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15), -6px -6px 10px -1px rgba(225, 225, 225, 0.15);
+}
+
+.inner {
+  height: 65px;
+  width: 65px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2), inset -4px -4px 6px -1px rgba(225, 225, 225, 0.2), 0.5px 0.5px 0.1px rgba(0, 0, 0, 0.15), 0.1px 12px 10px -10px rgba(0, 0, 0, 0.5);
+}
+
+.svg {
+  position: absolute;
+  margin: -80px 1px 1px 0.3px;
+  height: 100px;
+  width: 100px;
+}
+
+circle {
+  fill: none;
+  stroke-width: 8px;
+  stroke-dasharray: 208;
+  stroke-dashoffset: 208;
+  stroke: #51d1d9;
+}
+
+.html {
+  stroke-dashoffset: 15;
+}
+
+.css {
+  stroke-dashoffset: 22;
+}
+
+.js {
+  stroke-dashoffset: 55;
+}
+
+.projects {
+  padding-top: 60px;
+}
+
+.project-cart {
+  margin: 50px 20px;
+  border-radius: 20px;
+  transition: transform 0.5s ease;
+  width: 81vw;
+  padding: 20px;
+}
+
+.projects-images {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.project-popup-btn {
+  font-size: 15px;
+  background-color: unset;
+  border: none;
+  cursor: pointer;
+  margin: 20px 10px 20px 50%;
+}
+
+.project-popup-btn:hover {
+  color: white;
+}
+
+#project-popup {
+  position: fixed;
+  top: 10%;
+  left: 5%;
+  z-index: 100;
+  background-image: radial-gradient(#2d516d, #282c34);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+  width: 90%;
+  padding: 15px 15px 35px;
+  height: min-content;
+}
+
+#popup-btns {
+  margin-top: 20px;
+}
+
+#close-popup {
+  border-radius: 50%;
+  background: url(images/close.png) no-repeat;
+  background-size: cover;
+  width: 25px;
+  height: 25px;
+  font-size: 16px;
+  font-weight: 100;
+  margin: 0 0 0 90%;
+}
+
+.button {
+  padding: 6px;
+  border-radius: 8px;
+  border: 2px solid #a4faff;
+  cursor: pointer;
+  background: linear-gradient(180deg, #51d1d9 19.5%, #049ea8 82.5%);
+  text-decoration: none;
+  margin: 10px 29px;
+  font-weight: 700;
+  font-size: 10px;
+}
+
+.myform {
+  width: 262px;
+  margin: 30px;
+  padding: 40px 20px;
+  background-color: rgba(53, 99, 133, 0.6);
+  border-radius: 30px;
+}
+
+.myform input,
+textarea {
+  padding: 5px 15px;
+  border-radius: 17px;
+  border: 2px solid white;
+  width: 100%;
+  margin: -15px;
+  color: black;
+}
+
+.error {
+  color: red;
+  margin-left: 50px;
+}
+
+#submit {
+  cursor: pointer;
+  color: black;
+  width: 80px;
+  height: 25px;
+  background-color: #51d1d9;
+  border: 2px solid #51d1d9;
+  border-radius: 25px;
+}
+
+.media {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 40px;
+  margin: 15px;
+}
+
+.github,
+.linkedin {
+  height: 25px;
+  width: 25.76px;
+}
+
+.email {
+  width: 25px;
+  height: 20px;
+}
+
+@media (min-width: 700px) {
+  .navbarLinks {
+    padding: 40px;
+  }
+
+  .logo {
+    margin-right: 50px;
+  }
+
+  #contact {
+    padding-top: 50px;
+  }
+
+  .contact p,
+  .contact .myform {
+    width: 80%;
+  }
+
+  #home p {
+    margin: 25px 100px 40px;
+  }
+
+  #about-p {
+    padding: 20px 90px;
+  }
+
+  .certificates-container {
+    display: flex;
+    flex-direction: row;
+    font-size: 20px;
+  }
+
+  .certificates {
+    width: 65%;
+  }
+
+  .myCer {
+    font-size: 24px;
+    padding: 50px;
+  }
+
+  .images {
+    width: 418px;
+    height: 300px;
+    margin-top: 30px;
+  }
+
+  .skills-container {
+    gap: 60px;
+  }
+
+  .large {
+    display: none;
+  }
+
+  .para {
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  #projects-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+  }
+
+  .project-cart {
+    margin: 24px;
+    border-radius: 20px;
+    width: 40vw;
+    padding: 20px;
+  }
+
+  #project-popup {
+    width: 75vw;
+    top: 15%;
+    left: 12%;
+  }
+
+  .project-popup {
+    display: flex;
+    flex-direction: row;
+    padding: 30px;
+    height: 250px;
+  }
+
+  #popup-image {
+    width: 50%;
+    padding: 10px;
+    margin: 10px;
+  }
+
+  .error {
+    margin-left: -130px;
+  }
+}
+
+@media (min-width: 1000px) {
+  nav > .hidden {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .toggle-btn {
+    display: none;
+  }
+
+  .logo {
+    font-size: 35px;
+    margin-left: 80px;
+  }
+
+  .navbarLinks {
+    position: fixed;
+    z-index: 100;
+    background-image: unset;
+    box-shadow: unset;
+    right: 0;
+    height: 40px;
+    margin-left: 25%;
+    margin-top: -75px;
+  }
+
+  nav li a,
+  .contact p {
+    font-size: 25px;
+    line-height: 35px;
+  }
+
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    width: 100vw;
+  }
+
+  #home,
+  .about {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    padding: 150px 110px 50px;
+  }
+
+  #home h3,
+  #home b,
+  #home strong {
+    font-size: 25px;
+  }
+
+  #home div.flex {
+    align-items: start;
+    width: 100%;
+    padding: 0;
+    margin-left: 50px;
+  }
+
+  #home p,
+  #about p {
+    font-size: 20px;
+    line-height: 30px;
+    margin: 50px 0;
+  }
+
+  #about p {
+    padding: 0;
+    margin: 40px;
+  }
+
+  .button {
+    padding: 14px;
+    font-size: 20px;
+    margin: 50px;
+  }
+
+  .cer .btn {
+    padding: 15px 50px;
+    font-size: 20px;
+    margin-left: 50%;
+  }
+
+  h2.span {
+    font-size: 40px;
+  }
+
+  .about {
+    padding: 50px;
+  }
+
+  #about .myCer {
+    font-size: 40px;
+    margin-bottom: 90px;
+  }
+
+  .small {
+    display: none;
+  }
+
+  .large {
+    display: flex;
+    gap: 120px;
+  }
+
+  .skill,
+  .outer {
+    height: 230px;
+    width: 230px;
+    padding: 20px;
+  }
+
+  .inner {
+    height: 190px;
+    width: 190px;
+  }
+
+  .svg {
+    margin: -232px 1px 1px 1px;
+    height: 230px;
+    width: 230px;
+  }
+
+  circle {
+    stroke-width: 20px;
+    stroke-dasharray: 660;
+    stroke-dashoffset: 660;
+  }
+
+  #html,
+  #css,
+  #js {
+    font-size: 40px;
+  }
+
+  .html {
+    stroke-dashoffset: 64;
+  }
+
+  .css {
+    stroke-dashoffset: 98;
+  }
+
+  .js {
+    stroke-dashoffset: 230;
+  }
+
+  .soft {
+    margin: 35px;
+    padding: 20px;
+  }
+
+  .skills-img {
+    width: 220px;
+    padding: 50px;
+  }
+
+  #skills h4 {
+    margin-left: -55%;
+    font-size: 40px;
+    margin-top: 100px;
+  }
+
+  .media img {
+    margin: 20px 50px;
+    height: 54px;
+    width: 54px;
+  }
+
+  #skills h4 img {
+    width: 35px;
+  }
+
+  #skills p {
+    margin-top: 40px;
+    font-size: 40px;
+  }
+
+  .para {
+    line-height: 20px;
+  }
+
+  .project-popup-btn {
+    font-size: 18px;
+    margin: 20px 10px 20px 45%;
+  }
+
+  #project-popup {
+    width: 60vw;
+    left: 19%;
+  }
+
+  .cards {
+    width: 30%;
+    padding: 25px;
+    margin: 0 90px 100px;
+  }
+
+  .myform {
+    padding: 50px;
+  }
+
+  .contact input,
+  textarea {
+    padding: 16px 30px;
+    font-size: 30px;
+    border-radius: 28px;
+  }
+
+  #submit {
+    height: 70px;
+    width: 230px;
+    font-size: 30px;
+  }
+}

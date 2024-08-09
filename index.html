@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header class="main-header">
+    <header>
+      <button id="humburger" class="toggle-btn">|||</button>
+      <button id="close-list" class="hidden toggle-btn">X</button>
+      <h2 class="logo span">NQ</h2>
+    </header>
+    <nav>
+      <ul class="hidden navbarLinks" id="mobile-menu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home" class="flex">
+  </section>
+
+  <section id="about" class="flex">
+  </section>
+
+  <section id="skills" class="skills flex">
+    <h2 class='skills-title span'>Skills</h2>
+    <h4>Technical Skills <img width='15px' src='./images/skills.png' /></h4><br>
+    <div class='skills-container row small'>
+      <div class="skill">
+        <div class="outer">
+          <div class="inner">
+            <div id="html">95%</div>
+          </div>
+        </div>
+        <svg class="svg">
+          <circle class='html' cx="40" cy="40" r="36" stroke-linecap="round" />
+        </svg>
+        <p>HTML</p>
+      </div>
+      <div class="skill">
+        <div class="outer">
+          <div class="inner">
+            <div id="css">90%</div>
+          </div>
+        </div>
+        <svg class="svg">
+          <circle class='css' cx="40" cy="40" r="36" stroke-linecap="round" />
+        </svg>
+        <p>CSS</p>
+      </div>
+      <div class="skill">
+        <div class="outer">
+          <div class="inner">
+            <div id="js">70%</div>
+          </div>
+        </div>
+        <svg class="svg">
+          <circle class='js' cx="40" cy="40" r="36" stroke-linecap="round" />
+        </svg>
+        <p>javaScript</p>
+      </div>
+    </div>
+    <div class='skills-container row large'>
+      <div class="skill">
+        <div class="outer">
+          <div class="inner">
+            <div id="html">95%</div>
+          </div>
+        </div>
+        <svg class="svg">
+          <circle class='html' cx="115" cy="115" r="105" stroke-linecap="round" />
+        </svg>
+        <p class='para'>HTML</p>
+      </div>
+      <div class="skill">
+        <div class="outer">
+          <div class="inner">
+            <div id="css">90%</div>
+          </div>
+        </div>
+        <svg class="svg">
+          <circle class='css' cx="115" cy="115" r="105" stroke-linecap="round" />
+        </svg>
+        <p class='para'>CSS</p>
+      </div>
+      <div class="skill">
+        <div class="outer">
+          <div class="inner">
+            <div id="js">70%</div>
+          </div>
+        </div>
+        <svg class="svg">
+          <circle class='js' cx="115" cy="115" r="105" stroke-linecap="round" />
+        </svg>
+        <p class='para'>javaScript</p>
+      </div>
+    </div>
+    <br><br><br>
+    <h4 class='title'>Soft Skills <img width='15px' src='./images/skills.png' /></h4>
+    <div class='row'>
+      <div class='flex'>
+        <div class='soft'>
+          <img class='skills-img' src='./images/teamWork.png' />
+        </div><br>
+        <p class='para'>Team Work</p>
+      </div>
+      <div class='flex'>
+        <div class='soft'>
+          <img class='skills-img' src='./images/codeReveiw.png' />
+        </div><br>
+        <p class='para'>Code Reveiw</p>
+      </div>
+      <div class='flex'>
+        <div class='soft'>
+          <img class='skills-img' src='./images/cleanCode.png' />
+        </div><br>
+        <p class='para'>Clean Code</p>
+      </div>
+  </section>
+
+  <section id="projects" class="projects flex">
+    <h2 class="span">Projects</h2>
+    <div id="projects-container">
+    </div>
+    <div id="project-popup" class="hidden">
+      <button id="close-popup" class="button"></button>
+      <div id="popup-content" class="flex"></div>
+    </div>
+  </section>
+
+  <section id="contact" class="flex">
+    <h2 class="span">Contact Me</h2>
+    <div class="contact flex">
+      <p class="para">If you have an application you are interested in developing, a feature that you need builr or a
+        project that need coding. I'd love to help with it. Or if you have any feedback and message please share with
+        me.</p>
+      <form action="https://formspree.io/f/xldrbgao" name="myform" class="myform flex" id="myform" method="post">
+        <input type="text" name="name" id="name" class="'para'" placeholder="Enter your full name:">
+        <p id="name_error" class="error para"></p><br>
+        <input type="email" name="email" id="email" class="'para'" placeholder="Enter your E-Mail address:">
+        <p id="email_error" class="error para"></p><br>
+        <textarea name="message" id="message" class="'para'" rows="4" placeholder="Write your message:"></textarea>
+        <p id="message-error" class="error para"></p><br>
+        <button type="submit" id="submit">Submit ▶</button>
+      </form>
+    </div>
+    <div class="media">
+      <div><a target="_blank" rel="noopener" href="https://github.com/Najeeba-Qarqin"><img class="github"
+            src="images/github.png" alt="github"></a></div>
+      <div><a target="_blank" rel="noopener" id="profile-link"
+          href="https://www.linkedin.com/in/najeeba-qarqin-5419502ab?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><img
+            class="linkedin" src="images/linkedin.png" alt="linkedin"></a></div>
+      <div><a target="_blank" rel="noopener" href="https://najeebaqarqin@gmail.com"><img class="email"
+            src="images/email.png" alt="emil"></a></div>
+    </div>
+  </section>
+  <script src="script.js"></script>
+</body>
+
+</html>
